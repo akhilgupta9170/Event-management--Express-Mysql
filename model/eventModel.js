@@ -1,22 +1,22 @@
-const {Model, DataType } = require('sequeliize');
+const {Model, DataType, DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db.js');
 class Event extends Model {}
 
 Event.init({
     title:{
-        type : DataType.STRING,
+        type : DataTypes.STRING,
         allowNull: false
     },
     description: {
-        type : DataType.STRING,
+        type : DataTypes.STRING,
         allowNull: false
     },
     event_date:{
-        type : DataType.DATEONLY,
+        type : DataTypes.DATEONLY,
         allowNull: false
     },
     location:{
-        type : DataType.STRING,
+        type : DataTypes.STRING,
         allowNull: false,
     },
 },{

@@ -1,6 +1,6 @@
 const express = require('express');
-const { registerForEvent, getEventRegistrations } = require('../controllers/registrationController');
-const { verifyToken } = require('../middlewares/auth');
+const { registerForEvent, getEventRegistrations } = require('../controller/registrationController');
+const { verifyToken } = require('../middleware/auth');
 const router = express.Router();
 
 // Users can register for events

@@ -24,7 +24,7 @@ exports.getAllEvents = async (req, res) => {
   }
 };
 
-exports.creatEventById = async(req,res)=>{
+exports.updateEvent = async(req,res)=>{
     const {id }= req.params;
     const {title,description, event_date, location} = req.body;
     try{
@@ -39,7 +39,7 @@ exports.creatEventById = async(req,res)=>{
     }
 }
 
-exports.deleteEventById = async(req,res)=>{
+exports.deleteEvent = async(req,res)=>{
     const {id} = req.params
     try{
         const user = await Event.findByPk(id);
