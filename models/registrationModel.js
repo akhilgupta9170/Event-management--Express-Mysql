@@ -17,4 +17,4 @@ Registration.init({
   modelName: 'Registration',
 });
 
-module.exports = { Registration };
+module.exports =  Registration ;
